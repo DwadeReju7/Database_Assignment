@@ -1,0 +1,8 @@
+When considering that I had to create an e-commerce store it started off unnormalized with everyone in one table which 
+included all of the order details. Using this method would be messy however, with repeated information. From their I moved into 
+1NF, making sure that each column only had one value. After was 2NF -  I started breaking things up into separate tables. 
+I realized things like customer info, product details, and order info shouldn’t all live in one place. So I split them up, 
+and made sure each table had data that depended only on its main ID. Then I moved into 3NF, where I cleaned up anything that 
+didn’t directly depend on the main key in the table. For example, instead of storing the product category name inside the 
+products table over and over again, I made a separate category table and just used an ID to link them. By the end, my 
+database was way more organized and made more sense — no repeated info, just clean relationships between tables. 
